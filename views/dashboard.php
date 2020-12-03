@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-/* PUT THIS AT THE TOP OF INTERNAL PAGES */
-if(!$_SESSION['id']){ // If the session id is not set
+if(!$_SESSION['id']){
    header("location: loginRedirect.php");
    exit;
 }
-/*****************************************/
 
 include_once "../classes/user.php";
 
